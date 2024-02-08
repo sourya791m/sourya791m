@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourya Kumar - Personal Webpage</title>
+    <style>
+        /* CSS styles remain the same */
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.coding-skills {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.interests {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.project {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-style: italic;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    header {
+        font-size: 18px;
+    }
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 5px;.
+    }
+    nav a {
+        margin: 0 5px;
+    }
+    .project img {
+        margin-bottom: 5px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" onclick="scrollToSection('coding-skills')">Coding Skills</a>
+        <a href="#" onclick="scrollToSection('interests')">Interests</a>
+        <a href="#" onclick="scrollToSection('contact')">Contact</a>
+        <a href="#" onclick="scrollToSection('projects')">Projects</a>
+    </nav>
+
+    <header>
+        <h1>Sourya Kumar</h1>
+        <p>Better Known as: sourya791m</p>
+    </header>
+
+    <section id="coding-skills" class="coding-skills">
+        <h2>Coding Skills</h2>
+        <ul id="coding-skills-list"></ul>
+    </section>
+
+    <section id="interests" class="interests">
+        <h2>Interests</h2>
+        <p id="interests-text"></p>
+    </section>
+
+    <section id="contact" class="contact-info">
+        <h2>Contact Information</h2>
+        <p id="contact-info-text"></p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects Showcase</h2>
+        <div id="projects-list"></div>
+    </section>
+
+    <script>
+        // Mock data for coding skills, interests, contact info, and projects
+        const codingSkills = ['Java', 'HTML', 'CSS', 'Python', 'MS Word', 'MS Access', 'MS Excel', 'Adobe Photoshop'];
+        const interests = 'My passion for programming is boundless. Currently in 8th grade, with grand ambitions for the programming world.';
+        const contactInfo = {
+            email: 'sourya791m@example.com',
+            linkedin: 'https://www.linkedin.com/in/sourya791m'
+        };
+        const projects = [
+            { name: 'Project 1', image: 'project1.jpg', description: 'Description of Project 1' },
+            { name: 'Project 2', image: 'project2.jpg', description: 'Description of Project 2' }
+        ];
+
+        // Function to dynamically populate coding skills
+        function populateCodingSkills() {
+            const codingSkillsList = document.getElementById('coding-skills-list');
+            codingSkills.forEach(skill => {
+                const listItem = document.createElement('li');
+                listItem.textContent = skill;
+                codingSkillsList.appendChild(listItem);
+            });
+        }
+
+        // Function to dynamically populate interests
+        function populateInterests() {
+            document.getElementById('interests-text').textContent = interests;
+        }
+
+        // Function to dynamically populate contact information
+        function populateContactInfo() {
+            const contactInfoText = document.getElementById('contact-info-text');
+            contactInfoText.innerHTML = `Email: ${contactInfo.email}<br>LinkedIn: <a href="${contactInfo.linkedin}">Sourya Kumar</a>`;
+        }
+
+        // Function to dynamically populate projects
+        function populateProjects() {
+            const projectsList = document.getElementById('projects-list');
+            projects.forEach(project => {
+                const projectDiv = document.createElement('div');
+                projectDiv.classList.add('project');
+
+                const image = document.createElement('img');
+                image.src = project.image;
+                image.alt = project.name;
+                projectDiv.appendChild(image);
+
+                const description = document.createElement('p');
+                description.classList.add('project-description');
+                description.textContent = project.description;
+                projectDiv.appendChild(description);
+
+                projectsList.appendChild(projectDiv);
+            });
+        }
+
+        // Function to smoothly scroll to a section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Populate content on page load
+        window.onload = function() {
+            populateCodingSkills();
+            populateInterests();
+            populateContactInfo();
+            populateProjects();
+        };
+    </script>
+</body>
+</html>
