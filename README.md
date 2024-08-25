@@ -32,7 +32,7 @@ Beyond coding, I have a diverse range of interests. From diving into literature 
 
 ![Contact Information](contact_info.jpg)
 
-Have a project in mind or just want to say hello? Feel free to [drop me a message](mailto:sourya791m@example.com). I'm always excited to connect with fellow enthusiasts!
+Have a project in mind or just want to say hello? Feel free to [drop me a message](mailto:souryakumar399@gmail.com). I'm always excited to connect with fellow enthusiasts!
 
 ## 📂 Projects
 
