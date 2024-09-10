@@ -15,6 +15,7 @@ I'm proficient in a variety of programming languages and tools, always ready to 
 - **CSS**
 - **Python**
 - **C++**
+- **Arduino**
 
 ## 🌟 My Interests
 
