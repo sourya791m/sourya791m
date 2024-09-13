@@ -7,98 +7,171 @@
     <style>
         /* Base styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-image: url('header_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 2.5em;
             margin: 0;
             padding: 0;
         }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        header p {
+            font-size: 1.2em;
+            margin: 20px 0 0;
         }
 
         nav {
-            background-color: #444;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
         }
 
         nav a {
-            color: white;
+            color: #f4f4f9;
             text-decoration: none;
-            margin: 0 10px;
-            cursor: pointer;
+            font-size: 1.1em;
+            margin: 0 15px;
+            padding: 10px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #555;
+            border-radius: 5px;
         }
 
         section {
-            padding: 20px;
-            margin: 20px;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+            position: relative;
         }
 
         .coding-skills {
-            background-color: #f0f0f0;
+            background: url('coding_skills.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
             text-align: center;
-            padding: 20px;
         }
 
-        .interests {
-            background-color: #e0e0e0;
-            text-align: center;
-            padding: 20px;
+        .coding-skills h2, .interests h2, .contact-info h2, .projects h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .coding-skills ul, .interests ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        .coding-skills li {
+            padding: 10px;
+        }
+
+        .interests ul {
+            padding: 0;
+        }
+
+        .interests li {
+            font-size: 1.2em;
+            padding: 10px;
         }
 
         .contact-info {
-            background-color: #f9f9f9;
-            text-align: center;
-            padding: 20px;
+            background: url('contact_info.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
         }
 
         .projects {
-            background-color: #f0f0f0;
-            text-align: center;
-            padding: 20px;
+            background: url('projects.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
         }
 
         .project {
-            margin-top: 20px;
+            margin: 20px auto;
+            max-width: 300px;
             text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
         }
 
         .project img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            border-radius: 8px;
         }
 
         .project-description {
+            color: #ddd;
             font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
         }
 
         /* Media queries for responsive design */
         @media only screen and (max-width: 768px) {
-            header {
-                font-size: 18px;
+            header h1 {
+                font-size: 2em;
             }
+
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+
             section {
-                margin: 10px;
-                padding: 10px;
+                padding: 20px;
             }
         }
 
         @media only screen and (max-width: 600px) {
-            nav {
-                padding: 5px;
+            header h1 {
+                font-size: 1.8em;
             }
+
             nav a {
+                font-size: 0.9em;
                 margin: 0 5px;
             }
-            .project img {
-                margin-bottom: 5px;
+
+            .project {
+                max-width: 100%;
+                padding: 10px;
             }
         }
-
     </style>
 </head>
 <body>
@@ -143,6 +216,10 @@
         <p>Explore some of my recent projects that showcase my skills and passion for technology. Each project is a journey in itself, filled with challenges and triumphs.</p>
         <div id="projects-list"></div>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Sourya Kumar. All rights reserved.</p>
+    </footer>
 
     <script>
         // Mock data for coding skills, contact info, and projects
