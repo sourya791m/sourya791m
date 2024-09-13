@@ -5,140 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sourya Kumar - Personal Webpage</title>
     <style>
-        /* CSS styles remain the same */
-/* Base styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-nav {
-    background-color: #444;
-    text-align: center;
-    padding: 10px;
-}
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    cursor: pointer;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
 
-section {
-    padding: 20px;
-    margin: 20px;
-}
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
 
-.coding-skills {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 20px;
-}
+        .coding-skills {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
 
-.interests {
-    background-color: #e0e0e0;
-    text-align: center;
-    padding: 20px;
-}
+        .interests {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 20px;
+        }
 
-.contact-info {
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 20px;
-}
+        .contact-info {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+        }
 
-.projects {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 20px;
-}
+        .projects {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
 
-.project {
-    margin-top: 20px;
-    text-align: center;
-}
+        .project {
+            margin-top: 20px;
+            text-align: center;
+        }
 
-.project img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
 
-.project-description {
-    font-style: italic;
-}
+        .project-description {
+            font-style: italic;
+        }
 
-/* Media queries for responsive design */
-@media only screen and (max-width: 768px) {
-    header {
-        font-size: 18px;
-    }
-    section {
-        margin: 10px;
-        padding: 10px;
-    }
-}
+        /* Media queries for responsive design */
+        @media only screen and (max-width: 768px) {
+            header {
+                font-size: 18px;
+            }
+            section {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
 
-@media only screen and (max-width: 600px) {
-    nav {
-        padding: 5px;
-    }
-    nav a {
-        margin: 0 5px;
-    }
-    .project img {
-        margin-bottom: 5px;
-    }
-}
+        @media only screen and (max-width: 600px) {
+            nav {
+                padding: 5px;
+            }
+            nav a {
+                margin: 0 5px;
+            }
+            .project img {
+                margin-bottom: 5px;
+            }
+        }
 
     </style>
 </head>
 <body>
+    <header>
+        <h1>Hi, I'm Sourya Kumar! 👋</h1>
+        <p>Welcome to my GitHub profile! I'm a passionate developer with a love for technology, creativity, and innovation. Here you'll find an overview of my skills, interests, and projects.</p>
+    </header>
+
     <nav>
-        <a href="#" onclick="scrollToSection('coding-skills')">Coding Skills</a>
+        <a href="#" onclick="scrollToSection('coding-skills')">Skills & Technologies</a>
         <a href="#" onclick="scrollToSection('interests')">Interests</a>
         <a href="#" onclick="scrollToSection('contact')">Contact</a>
         <a href="#" onclick="scrollToSection('projects')">Projects</a>
     </nav>
 
-    <header>
-        <h1>Sourya Kumar</h1>
-        
-    </header>
-
     <section id="coding-skills" class="coding-skills">
-        <h2>Coding Skills</h2>
+        <h2>🚀 Skills & Technologies</h2>
+        <p>I'm proficient in a variety of programming languages and tools, always ready to turn ideas into reality. Here are some of the skills I bring to the table:</p>
         <ul id="coding-skills-list"></ul>
     </section>
 
     <section id="interests" class="interests">
-        <h2>Interests</h2>
-        <p id="interests-text"></p>
+        <h2>🌟 My Interests</h2>
+        <p>Beyond coding, I have a diverse range of interests. From diving into literature to exploring the cosmos, there's always something new to discover.</p>
+        <ul>
+            <li>Reading</li>
+            <li>Astronomy</li>
+            <li>Traveling</li>
+            <li>Gaming</li>
+            <li>Music</li>
+        </ul>
     </section>
 
     <section id="contact" class="contact-info">
-        <h2>Contact Information</h2>
+        <h2>📬 Get in Touch</h2>
+        <p>Have a project in mind or just want to say hello? Feel free to drop me a message. I'm always excited to connect with fellow enthusiasts!</p>
         <p id="contact-info-text"></p>
     </section>
 
     <section id="projects" class="projects">
-        <h2>Projects Showcase</h2>
+        <h2>📂 Projects</h2>
+        <p>Explore some of my recent projects that showcase my skills and passion for technology. Each project is a journey in itself, filled with challenges and triumphs.</p>
         <div id="projects-list"></div>
     </section>
 
     <script>
-        // Mock data for coding skills, interests, contact info, and projects
-        const codingSkills = ['Java', 'HTML', 'CSS', 'Python', 'MS Word', 'MS Access', 'MS Excel', 'Adobe Photoshop'];
-        const interests = 'My passion for programming is boundless. Currently in 8th grade, with grand ambitions for the programming world.';
+        // Mock data for coding skills, contact info, and projects
+        const codingSkills = ['Java', 'HTML', 'CSS', 'Python', 'C++', 'Arduino'];
         const contactInfo = {
             email: 'sourya791m@example.com',
             linkedin: 'https://www.linkedin.com/in/sourya791m'
@@ -158,15 +166,10 @@ section {
             });
         }
 
-        // Function to dynamically populate interests
-        function populateInterests() {
-            document.getElementById('interests-text').textContent = interests;
-        }
-
         // Function to dynamically populate contact information
         function populateContactInfo() {
             const contactInfoText = document.getElementById('contact-info-text');
-            contactInfoText.innerHTML = `Email: ${contactInfo.email}<br>LinkedIn: <a href="${contactInfo.linkedin}">Sourya Kumar</a>`;
+            contactInfoText.innerHTML = `Email: ${contactInfo.email}<br>LinkedIn: <a href="${contactInfo.linkedin}" target="_blank">Sourya Kumar</a>`;
         }
 
         // Function to dynamically populate projects
@@ -199,7 +202,6 @@ section {
         // Populate content on page load
         window.onload = function() {
             populateCodingSkills();
-            populateInterests();
             populateContactInfo();
             populateProjects();
         };
