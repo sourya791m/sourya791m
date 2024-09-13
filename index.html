@@ -23,12 +23,12 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+            border-bottom: 5px solid #333;
         }
 
         header h1 {
             font-size: 2.5em;
             margin: 0;
-            padding: 0;
         }
 
         header p {
@@ -41,6 +41,7 @@
             color: white;
             text-align: center;
             padding: 15px;
+            border-bottom: 2px solid #555;
         }
 
         nav a {
@@ -49,11 +50,12 @@
             font-size: 1.1em;
             margin: 0 15px;
             padding: 10px;
-            transition: background 0.3s ease;
+            transition: background 0.3s ease, color 0.3s ease;
         }
 
         nav a:hover {
             background: #555;
+            color: #fff;
             border-radius: 5px;
         }
 
@@ -63,51 +65,32 @@
             max-width: 1200px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background: white;
+            background: #ffffff;
             position: relative;
         }
 
         .coding-skills {
-            background: url('coding_skills.jpg') no-repeat center center;
-            background-size: cover;
-            color: white;
+            background: #e0f7fa;
+            color: #00796b;
             text-align: center;
         }
 
-        .coding-skills h2, .interests h2, .contact-info h2, .projects h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .coding-skills ul, .interests ul {
-            list-style-type: none;
-            padding: 0;
-            font-size: 1.2em;
-        }
-
-        .coding-skills li {
-            padding: 10px;
-        }
-
-        .interests ul {
-            padding: 0;
-        }
-
-        .interests li {
-            font-size: 1.2em;
-            padding: 10px;
+        .interests {
+            background: #fff3e0;
+            color: #ff6f00;
+            text-align: center;
         }
 
         .contact-info {
-            background: url('contact_info.jpg') no-repeat center center;
-            background-size: cover;
-            color: white;
+            background: #e8f5e9;
+            color: #2e7d32;
+            text-align: center;
         }
 
         .projects {
-            background: url('projects.jpg') no-repeat center center;
-            background-size: cover;
-            color: white;
+            background: #fce4ec;
+            color: #c2185b;
+            text-align: center;
         }
 
         .project {
@@ -117,6 +100,7 @@
             background: rgba(0, 0, 0, 0.6);
             padding: 20px;
             border-radius: 8px;
+            color: white;
         }
 
         .project img {
@@ -135,6 +119,7 @@
             padding: 20px;
             background: #333;
             color: white;
+            border-top: 2px solid #555;
         }
 
         footer p {
@@ -225,8 +210,10 @@
         // Mock data for coding skills, contact info, and projects
         const codingSkills = ['Java', 'HTML', 'CSS', 'Python', 'C++', 'Arduino'];
         const contactInfo = {
-            email: 'sourya791m@example.com',
-            linkedin: 'https://www.linkedin.com/in/sourya791m'
+            email: 'souryakumar399@gmail.com',
+            telegram: 'https://web.telegram.org/k/#@sourya791m',
+            x: 'https://x.com/sourya791m',
+            instagram: 'https://www.instagram.com/sourya791m/'
         };
         const projects = [
             { name: 'Project 1', image: 'project1.jpg', description: 'Description of Project 1' },
@@ -246,7 +233,12 @@
         // Function to dynamically populate contact information
         function populateContactInfo() {
             const contactInfoText = document.getElementById('contact-info-text');
-            contactInfoText.innerHTML = `Email: ${contactInfo.email}<br>LinkedIn: <a href="${contactInfo.linkedin}" target="_blank">Sourya Kumar</a>`;
+            contactInfoText.innerHTML = `
+                Email: <a href="mailto:${contactInfo.email}">${contactInfo.email}</a><br>
+                Telegram: <a href="${contactInfo.telegram}" target="_blank">Sourya Kumar</a><br>
+                X (formerly Twitter): <a href="${contactInfo.x}" target="_blank">Sourya Kumar</a><br>
+                Instagram: <a href="${contactInfo.instagram}" target="_blank">Sourya Kumar</a>
+            `;
         }
 
         // Function to dynamically populate projects
