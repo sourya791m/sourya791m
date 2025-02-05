@@ -12,7 +12,6 @@
             padding: 0;
             background-color: #f0f0f0;
             color: #333;
-            line-height: 1.6;
         }
 
         header {
@@ -30,9 +29,6 @@
             text-align: center;
             padding: 15px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
         }
 
         nav a {
@@ -41,7 +37,6 @@
             margin: 0 15px;
             font-size: 18px;
             transition: color 0.3s ease, transform 0.3s ease;
-            padding: 10px;
         }
 
         nav a:hover {
@@ -63,19 +58,16 @@
             color: #333;
             font-size: 28px;
             text-align: center;
-            margin-bottom: 20px;
         }
 
         p {
+            line-height: 1.8;
             font-size: 16px;
             text-align: center;
-            margin: 0 auto;
-            max-width: 700px;
         }
 
         img {
             max-width: 100%;
-            height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
@@ -88,9 +80,6 @@
             list-style: none;
             padding: 0;
             text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
         }
 
         ul li {
@@ -98,6 +87,7 @@
             margin: 10px;
             background-color: #f7f7f7;
             border-radius: 20px;
+            display: inline-block;
             font-size: 16px;
             color: #333;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -105,20 +95,10 @@
 
         .project {
             margin-bottom: 30px;
-            text-align: center;
         }
 
         .project img {
             transition: transform 0.3s ease;
-            max-width: 100%;
-            height: 400px;
-            width: 550px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .project img:hover {
@@ -129,7 +109,6 @@
             font-size: 15px;
             color: #666;
             text-align: center;
-            margin-top: 10px;
         }
 
         /* Media queries for responsive design */
@@ -171,10 +150,10 @@
 </head>
 <body>
     <nav>
-        <a href="#" onclick="scrollToSection('coding-skills')" aria-label="Scroll to Skills & Technologies">Skills &amp; Technologies</a>
-        <a href="#" onclick="scrollToSection('interests')" aria-label="Scroll to My Interests">My Interests</a>
-        <a href="#" onclick="scrollToSection('contact')" aria-label="Scroll to Contact">Get in Touch</a>
-        <a href="#" onclick="scrollToSection('projects')" aria-label="Scroll to Projects">Projects</a>
+        <a href="#" onclick="scrollToSection('coding-skills')">Skills &amp; Technologies</a>
+        <a href="#" onclick="scrollToSection('interests')">My Interests</a>
+        <a href="#" onclick="scrollToSection('contact')">Get in Touch</a>
+        <a href="#" onclick="scrollToSection('projects')">Projects</a>
     </nav>
 
     <header>
@@ -183,39 +162,27 @@
 
     <section id="coding-skills">
         <h2>Skills &amp; Technologies</h2>
-        <img src="coding_skills.jpg" alt="Coding Skills Illustration" loading="lazy">
+        <img src="coding_skills.jpg" alt="Coding Skills">
         <ul id="coding-skills-list"></ul>
         <p>Step into the realm of technology where creativity meets innovation. With proficiency in various programming languages and tools, I'm ready to turn ideas into reality.</p>
     </section>
 
     <section id="interests">
         <h2>My Interests</h2>
-        <img src="interests.jpg" alt="Interests Illustration" loading="lazy">
+        <img src="interests.jpg" alt="Interests">
         <p>Outside the world of coding, I find solace in exploring various interests. Whether it's diving into the world of literature or exploring the depths of the cosmos, there's always something new to discover.</p>
     </section>
 
     <section id="contact">
         <h2>Get in Touch</h2>
-        <img src="contact_info.jpg" alt="Contact Information Illustration" loading="lazy">
+        <img src="contact_info.jpg" alt="Contact Information">
         <p>Have a project in mind or just want to say hello? Feel free to <a href="mailto:sourya791m@example.com">drop me a message</a>. I'm always excited to connect with fellow enthusiasts!</p>
-        
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <a href="https://www.instagram.com/sourya791m" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i><h4>Instagram</h4>   
-            </a>
-            <a href="https://twitter.com/sourya791m" target="_blank" aria-label="Twitter">
-                <i class="fab fa-twitter"></i><h4>Twitter</h4>
-            </a>
-            <a href="https://www.youtube.com/@sourya791m" target="_blank" aria-label="YouTube">
-                <i class="fab fa-youtube"></i><h4>YouTube</h4>
-            </a>
-        </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <img src="projects.jpg" alt="Projects Showcase Illustration" loading="lazy">
+        <h3>IT WILL BE UPDATED SOON...</h3>
+        <img src="projects.jpg" alt="Projects Showcase">
         <div id="projects-list"></div>
         <p>Explore some of my recent projects that showcase my skills and passion for technology. Each project is a journey in itself, filled with challenges and triumphs.</p>
     </section>
@@ -223,13 +190,12 @@
     <script>
         const codingSkills = ['Java', 'HTML', 'CSS', 'Python', 'C++'];
         const projects = [
-            { name: 'Project 1', image: '1738474403357.jpg', description: 'Description of Project 1' },
+            { name: 'Project 1', image: 'project1.jpg', description: 'Description of Project 1' },
+            { name: 'Project 2', image: 'project2.jpg', description: 'Description of Project 2' }
         ];
 
         function populateCodingSkills() {
             const codingSkillsList = document.getElementById('coding-skills-list');
-            if (!codingSkillsList) return;
-
             codingSkills.forEach(skill => {
                 const listItem = document.createElement('li');
                 listItem.textContent = skill;
@@ -239,8 +205,6 @@
 
         function populateProjects() {
             const projectsList = document.getElementById('projects-list');
-            if (!projectsList) return;
-
             projects.forEach(project => {
                 const projectDiv = document.createElement('div');
                 projectDiv.classList.add('project');
@@ -248,7 +212,6 @@
                 const image = document.createElement('img');
                 image.src = project.image;
                 image.alt = project.name;
-                image.loading = "lazy";
                 projectDiv.appendChild(image);
 
                 const description = document.createElement('p');
@@ -262,9 +225,7 @@
 
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
+            section.scrollIntoView({ behavior: 'smooth' });
         }
 
         window.onload = function() {
