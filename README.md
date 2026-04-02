@@ -1,31 +1,63 @@
-# 🚀 Sourya Kumar - Personal Portfolio Website
+# Hi 👋, I'm Sourya Kumar
 
-Welcome to my personal portfolio website! 🎉 This website showcases my journey into technology, my skills, interests, and projects. 🌟  
+🚀 Code • Create • Build AI | Future Startup Founder
 
-## 🌟 Features  
-- 🎨 **Responsive Design**: Adapts to different screen sizes.  
-- 🔗 **Smooth Navigation**: Clickable navigation links with smooth scrolling.  
-- ⚡ **Dynamic Content**: Skills and projects are dynamically loaded using JavaScript.  
-- 📱 **Social Media Links**: Connect with me on Instagram, Twitter, and YouTube.  
+---
 
-## 🛠 Technologies Used  
-- 🏗 **HTML** for structure  
-- 🎨 **CSS** for styling and responsiveness  
-- 🖥 **JavaScript** for interactivity  
+## 🔥 About Me
 
-## 📌 Sections  
-- 💻 **Skills & Technologies**: List of programming languages and tools I use.  
-- 🌍 **My Interests**: Hobbies and passions beyond coding.  
-- 📩 **Get in Touch**: Contact information and social media links.  
-- 🚀 **Projects**: Showcases my latest work with images and descriptions.  
+* 🎓 Completed Class 10 (ICSE) → Moving to PCM (CBSE)
+* 💻 Passionate about building real-world tech projects
+* 🤖 Interested in AI, Startups & Ethical Cybersecurity
+* 🛠️ Working on robotics and intelligent systems
+* 🌱 Currently learning Python, Git, and AI fundamentals
 
-## 🛠 Installation & Usage  
-1. 📥 Clone the repository:  
-   ```bash
-   git clone https://github.com/sourya791m/your-repo.git
-🌐 Open index.html in your browser.
-2. 🤝 Contributing
-Feel free to fork this repository and submit a pull request if you have any improvements! 💡
+---
 
-## 📜 License
-This project is open-source and available under the MIT License. 📝
+## 🛠️ Tech Stack
+
+* 💻 Languages: C++ (basic), Python (learning), Java (basic)
+* 🌐 Web: HTML, CSS
+* ⚙️ Tools: GitHub (basic), Arduino
+* 🤖 Hardware: Robotics & Sensor-based systems
+
+---
+
+## 🚀 Projects
+
+### 🤖 Human Following Robot
+
+A sensor-based robotic system using Arduino that detects and follows human movement in real-time.
+
+### ✍️ Writing Machine
+
+A hardware-based project designed to automate writing using mechanical and electronic components.
+
+---
+
+## 🌱 Currently Learning
+
+* Python for AI
+* Git & Version Control
+* Basics of Machine Learning
+
+---
+
+## 🎯 Goals
+
+* Build AI-based real-world projects
+* Create a tech startup in the future
+* Solve practical problems using technology
+
+---
+
+## 📫 Connect With Me
+
+* 🌐 Website: https://sourya791m.github.io/sourya791m/
+* 📷 Instagram: https://www.instagram.com/sourya791m/
+* 🐦 Twitter (X): https://x.com/sourya791m
+* 💻 GitHub: https://github.com/sourya791m
+
+---
+
+⭐ “Building today what others will use tomorrow.”
