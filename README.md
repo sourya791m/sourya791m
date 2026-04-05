@@ -1,63 +1,64 @@
 # Hi 👋, I'm Sourya Kumar
 
-🚀 Code • Create • Build AI | Future Startup Founder
+🚀 Builder | AI & Robotics | Future Founder
 
 ---
 
 ## 🔥 About Me
 
-* 🎓 Completed Class 10 (ICSE) → Moving to PCM (CBSE)
-* 💻 Passionate about building real-world tech projects
-* 🤖 Interested in AI, Startups & Ethical Cybersecurity
-* 🛠️ Working on robotics and intelligent systems
-* 🌱 Currently learning Python, Git, and AI fundamentals
+I'm an 18-year-old from India who's been building things since I was a kid.  
+What started with taking gadgets apart turned into **robotics**, then **software**, and now I'm deeply diving into **AI** and intelligent systems.
+
+I care about building things that actually work — not just prototypes or theory. Right now, I'm focused on **AI**, embedded systems, robotics, and understanding how real products and companies are built from scratch.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* 💻 Languages: C++ (basic), Python (learning), Java (basic)
-* 🌐 Web: HTML, CSS
-* ⚙️ Tools: GitHub (basic), Arduino
-* 🤖 Hardware: Robotics & Sensor-based systems
+- **AI & Machine Learning**: Learning model fundamentals, training, limitations & building reliable AI products
+- **Languages**: Python, C++, Java (basics)
+- **Web**: HTML, CSS
+- **Hardware & Robotics**: Arduino, Sensors, Motor Control, Stepper Systems
+- **Tools**: Git, GitHub
 
 ---
 
 ## 🚀 Projects
 
-### 🤖 Human Following Robot
-
-A sensor-based robotic system using Arduino that detects and follows human movement in real-time.
+### 🤖 Arduino Smart Car
+Autonomous 4-wheel robot using ultrasonic and IR sensors for real-time obstacle detection and avoidance.
 
 ### ✍️ Writing Machine
-
-A hardware-based project designed to automate writing using mechanical and electronic components.
+A mechanical robot that converts digital text into physical handwriting using stepper motors and precise control logic.
 
 ---
 
-## 🌱 Currently Learning
+## 🌱 Currently Learning & Building
 
-* Python for AI
-* Git & Version Control
-* Basics of Machine Learning
+- **AI Properly** — Understanding how models work, where they fail, and how to build real products on top of them
+- Advanced Robotics (sensor fusion, motor control, automation logic)
+- Systems thinking & product architecture
+- Core Computer Science fundamentals (DSA, clean code)
+- How real companies and startups are built
 
 ---
 
 ## 🎯 Goals
 
-* Build AI-based real-world projects
-* Create a tech startup in the future
-* Solve practical problems using technology
+- Build impactful **AI-powered** real-world systems
+- Create intelligent robotics products
+- Start a tech company that solves meaningful problems
+- Keep shipping fast and learning by doing
 
 ---
 
 ## 📫 Connect With Me
 
-* 🌐 Website: https://sourya791m.github.io/sourya791m/
-* 📷 Instagram: https://www.instagram.com/sourya791m/
-* 🐦 Twitter (X): https://x.com/sourya791m
-* 💻 GitHub: https://github.com/sourya791m
+- 🌐 **Website**: [sourya791m.github.io/sourya791m](https://sourya791m.github.io/sourya791m/)
+- 📷 **Instagram**: [@sourya791m](https://www.instagram.com/sourya791m/)
+- 🐦 **X (Twitter)**: [@sourya791m](https://x.com/sourya791m)
+- 💻 **GitHub**: [sourya791m](https://github.com/sourya791m)
 
 ---
 
-⭐ “Building today what others will use tomorrow.”
+⭐ “I build things that work. Hardware, software, systems — I care about what gets made, not just what gets talked about.”
